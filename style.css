@@ -47,8 +47,9 @@ h1 {
 }
 
 .back-button {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 10px; /* Reduced margin */
+    padding: 5px 10px; /* Smaller padding */
+    font-size: 0.9em; /* Smaller font size */
     background-color: #c71585;
     color: white;
     border: none;
@@ -59,4 +60,12 @@ h1 {
 
 .back-button:hover {
     background-color: #ff69b4;
+}
+
+/* Centering the product cards */
+.product-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap */
+    margin: 20px 0; /* Add some margin around the container */
 }
