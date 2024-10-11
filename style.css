@@ -1,71 +1,69 @@
 body {
-    background-color: #ffe6f2;
+    background: linear-gradient(to right, #ffe6f2, #ffccf2);
     text-align: center;
     font-family: 'Arial', sans-serif;
+    padding: 20px;
 }
 
 h1 {
     color: #c71585;
     margin: 20px 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(255, 182, 193, 0.6);
 }
 
-.product-card, .large-card {
+.product-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin: 20px 0; 
+}
+
+.product-card {
     display: inline-block;
-    margin: 20px;
-    padding: 15px;
-    border: 2px solid #ffb6c1;
+    margin: 15px;
+    padding: 20px;
+    border: none;
     border-radius: 15px;
-    background-color: #fadae6;
+    background: radial-gradient(circle, #ffb6c1, #fadae6);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
     width: 250px;
     position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.product-card:hover, .large-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 25px rgba(255, 182, 193, 0.5);
-    background-color: #ffebf2;
-    filter: drop-shadow(0 0 5px #ff69b4);
+.product-card:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 15px 25px rgba(255, 182, 193, 0.7);
+    background: radial-gradient(circle, #ff69b4, #ffebf2);
 }
 
-.product-card img, .product-image {
+.product-card img {
     max-width: 100%;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.product-card h3, .large-card h3 {
+.product-card h3 {
     color: #c71585;
-}
-
-.large-card {
-    width: 300px;
-}
-
-.large-card ul, .large-card ol {
-    text-align: left;
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
 .back-button {
-    margin-top: 10px; /* Reduced margin */
-    padding: 5px 10px; /* Smaller padding */
-    font-size: 0.9em; /* Smaller font size */
+    margin-top: 15px;
+    padding: 5px 10px; 
+    font-size: 0.8em; 
     background-color: #c71585;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .back-button:hover {
     background-color: #ff69b4;
-}
-
-/* Centering the product cards */
-.product-container {
-    display: flex;
-    justify-content: center; /* Center the cards horizontally */
-    flex-wrap: wrap; /* Allow cards to wrap */
-    margin: 20px 0; /* Add some margin around the container */
+    transform: scale(1.05);
 }
