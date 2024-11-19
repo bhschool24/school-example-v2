@@ -52,21 +52,16 @@ h1 {
 }
 
 .back-button {
-    display: flex;
-    margin-top: 15px;
-    padding: 5px 10px; 
-    font-size: 0.8em; 
+    display: block; /* For centering */
+    margin: 15px auto; /* Center horizontally, with a top margin */
+    padding: 2px 4px; /* Reduce padding by 60% */
+    font-size: 0.32em; /* 60% smaller than the original 0.8em */
     background-color: #c71585;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    width: 25%;
-    justify-content: center; 
-    align-content: center;
-    flex-wrap: wrap; 
-    text-align: center;
 }
 
 .back-button:hover {
