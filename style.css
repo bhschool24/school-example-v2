@@ -52,7 +52,7 @@ h1 {
 }
 
 .back-button {
-    display: block; /* For centering */
+    display: flex; /* For centering */
     margin: 15px auto; /* Center horizontally, with a top margin */
     padding: 2px 4px; /* Reduce padding by 60% */
     font-size: 0.32em; /* 60% smaller than the original 0.8em */
