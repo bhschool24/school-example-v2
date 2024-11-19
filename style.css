@@ -52,6 +52,7 @@ h1 {
 }
 
 .back-button {
+    display: flex;
     margin-top: 15px;
     padding: 5px 10px; 
     font-size: 0.8em; 
@@ -62,6 +63,8 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     width: 25%;
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
 
 .back-button:hover {
