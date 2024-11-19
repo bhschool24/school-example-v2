@@ -53,9 +53,9 @@ h1 {
 
 .back-button {
     display: flex; /* For centering */
-    margin: 15px auto; /* Center horizontally, with a top margin */
-    padding: 2px 4px; /* Reduce padding by 60% */
-    font-size: 0.32em; /* 60% smaller than the original 0.8em */
+    margin: 21px auto; /* Center horizontally, with a top margin */
+    padding: 2.8px 5.6px; /* Reduce padding by 60% */
+    font-size: 0.448em; /* 60% smaller than the original 0.8em */
     background-color: #c71585;
     color: white;
     border: none;
